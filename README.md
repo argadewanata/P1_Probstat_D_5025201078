@@ -296,6 +296,7 @@ exp_dist_i <- dexp(x = Lambda)
 ```  
 
 **Penjelasan**  
+Dengan menggunakn fungsi `dexp`, akan didapatkan suatu nilai peluang dari nilai X sebesar 0.49787  
 
 **Screenshot**  
 ![5A](https://user-images.githubusercontent.com/70679432/162620664-b259ae8c-8fbe-4ad8-94c3-14769e57feea.jpeg)  
@@ -324,6 +325,7 @@ N_10000 <- runif(10000)
 hist(rexp(N_10000),main = "Histogram Distribusi Exponensial 10000 Angka Acak")
 ``` 
 **Penjelasan**  
+Angka acak akan dibuat menggunakan fungsi `runif`. Setelah angka acak tersebut siap, akan digunakan fungsi `rexp` dan hasilnya akan ditampilkan sebagai histogram dengan fungsi `hist`.  
   
 **Screenshot**  
 ![5B_i](https://user-images.githubusercontent.com/70679432/162620757-191a8943-b523-4dbc-bbcc-73fc7200bd01.jpeg)  
@@ -345,6 +347,7 @@ variance <- var(exp_dist_ii)
 ```  
 
 **Penjelasan**  
+Pada kasus ini, nilai mean dan varians didaptkan dengan menggunakan fungsi bawaan `mean` dan `variance`.  
 
 **Screenshot**  
 ![5C](https://user-images.githubusercontent.com/70679432/162620912-bb1e6c7f-1ccd-46b6-ac2b-dfdd5211e386.jpeg)  
@@ -374,6 +377,7 @@ plot(z_score, type = 'p', col='blue')
 ```  
 
 **Penjelasan**  
+Nilai dari distribusi normal akan didapatkan melalui fungsi `rnorm` lalu akan di `floor` menjadi x1 dan di `ceiling` menjadi x2. Kemudian nilai dari z_score dapat diketahui dan di-plotting dengan fungsi `plot`.  
 
 **Screenshot**  
 ![6A](https://user-images.githubusercontent.com/70679432/162621033-fa13b18f-4ad1-404e-bfec-edb33f9544da.jpeg)  
@@ -389,13 +393,14 @@ hist(norm_dist_i,50,main = "5025201078_Rere Arga Dewanata_Probstat_D_DNhistogram
 ```  
 
 **Penjelasan**  
+Nilai dari distribusi normal yang telah dihitung sebelumnya akan ditampilkan dalam bentuk histogram dengan fungsi `hist` dengan aturan `breaks = 50` dan judul `main = "5025201078_Rere Arga Dewanata_Probstat_D_DNhistogram"`  
 
 **Screenshot**  
 ![6B](https://user-images.githubusercontent.com/70679432/162621114-a250190c-4274-431c-a32d-e7559e7ee0a1.jpeg)  
 
 ### Soal 6C  
 **Deskripsi Soal**  
-Nilai Varian (σ²) dari hasil generate random nilai  Distribusi Normal.  
+Nilai Varian (σ²) dari hasil generate random nilai Distribusi Normal.  
 
 **Kode Program**  
 ```R
@@ -405,6 +410,7 @@ variance <- std_dev_ii * std_dev_ii
 ```  
 
 **Penjelasan**  
+Nilai varians pada distribusi normal dapat diketahui dengan kuadrat dari standar deviasi  
 
 **Screenshot**  
 ![6C](https://user-images.githubusercontent.com/70679432/162621180-346053d3-8a8d-41e2-abff-52759ca004e9.jpeg)  
