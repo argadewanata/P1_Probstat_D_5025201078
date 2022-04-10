@@ -142,6 +142,7 @@ Untuk mendapatkan kedua nilai tersebut, digunakan rumus mean `N*P` dan rumus mea
 ![2C](https://user-images.githubusercontent.com/70679432/162619632-4a537e2d-e5c4-4835-b183-09a0b506516c.jpeg)  
 
 ## Soal 3  
+Diketahui data dari sebuah tempat bersalin di rumah sakit tertentu menunjukkan rata-rata historis 4,5 bayi lahir di rumah sakit ini setiap hari. (gunakan Distribusi Poisson)  
 
 **Kode Program**  
 ```R
@@ -212,6 +213,64 @@ variance <- mean
 
 **Screenshot**  
 ![3D](https://user-images.githubusercontent.com/70679432/162620127-129f55c1-1d83-4619-9d83-5fbfe11b800e.jpeg)  
+
+## Soal 4  
+Diketahui nilai x = 2 dan v = 10.  
+**Kode Program** 
+```R
+X <- 2
+V <- 10
+```  
+
+### Soal 4A  
+**Deskripsi Soal**
+Fungsi Probabilitas dari Distribusi Chi-Square.  
+
+**Kode Program**  
+```R
+# Soal 4A
+chisq_dist_i <- dchisq(X,df = V)
+```  
+
+**Penjelasan**  
+
+**Screenshot**  
+![4A](https://user-images.githubusercontent.com/70679432/162620381-1870d25f-5846-4143-9969-41af6b88358d.jpeg)  
+
+### Soal 4B  
+**Deskripsi Soal**  
+Histogram dari Distribusi Chi-Square dengan 100 data random.  
+
+**Kode Program**  
+```R
+# Soal 4B
+N = runif(100)
+chisq_dist_ii <- rchisq(N,df = V)
+hist(chisq_dist_ii,main = "Grafik Histogram Distribusi Chi-Square pada 100 Random Data")
+```  
+
+**Penjelasan**  
+
+**Screenshot**  
+![4B](https://user-images.githubusercontent.com/70679432/162620433-a25ac404-8e79-45f0-af23-32629ffe2fd8.jpeg)  
+
+### Soal 4C  
+**Deskripsi Soal**  
+Nilai Rataan (μ) dan Varian ( σ² ) dari Distribusi Chi-Square.  
+
+**Kode Program**  
+```R
+# Soal 4C
+mean <- V
+variance <- V * 2
+```  
+
+**Penjelasan**  
+
+**Screenshot**  
+![4C](https://user-images.githubusercontent.com/70679432/162620500-23324422-f3b8-433d-a694-9e245767951f.jpeg)  
+
+
 
 
 
