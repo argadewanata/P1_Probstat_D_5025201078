@@ -10,6 +10,7 @@ Berapa peluang penyurvei bertemu x = 3 orang yang tidak menghadiri acara vaksina
 
 **Kode Program**    
 ```R
+# Soal 1A
 X <- 3
 P <- 0.2
 Q <- 1 - P
@@ -17,10 +18,29 @@ Q <- 1 - P
 geo_dist_i <- dgeom(X,P)
 ```    
 
-**Penjelasan** 
+**Penjelasan**   
 Dengan memanfaatkan fungsi `dgeom` yang menerima parameter n dan peluang, akan didapatkan nilai peluang untuk bertemu 3 orang yang tidak menghadiri acara vaksinasi dan akan bertemu keberhasilan pertama dengan peluang 0.2. Setelah fungsi tersebut dijalankan, akan didapatkan nilai peluang sebesar 0.1024  
 
 **Screenshot**  
 ![1A](https://user-images.githubusercontent.com/70679432/162615719-ade0e748-5284-423e-9421-cbbba2785e23.jpeg)  
+
+### Soal 1B  
+**Deskripsi Soal**  
+Nilai mean dari distribusi Geometrik dengan 10000 data random , prob = 0,20 dimana distribusi geometrik acak tersebut X = 3  
+
+**Kode Program**  
+```R
+# Soal 1B
+N <- 10000
+geo_dist_ii <- rgeom(N,P)
+mean(geo_dist_ii == 3)
+```  
+
+**Penjelasan**  
+Berbeda dengan fungsi sebelumnya, fungsi `rgeom` adalah fungsi yang berguna untuk mendapatkan distribusi geometrik dengan variabel acak. Dalam hal ini, variabel acak sejumlah 10000 data dan peluangnya sebesar 0.2. Setelah fungsi tersebut dijalankan, akan didapatkan nilai mean yang acak pula tergantung dengan hasil yang didapat pada line sebelumnya  
+
+**Screenshot**  
+![1B_ii](https://user-images.githubusercontent.com/70679432/162615960-58acb1a9-1ede-4a74-a74d-6b327910d165.jpeg)  
+
 
 
