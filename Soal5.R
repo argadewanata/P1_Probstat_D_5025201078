@@ -25,8 +25,8 @@
   N <- 10
   exp_dist_ii <- rexp(10)
   mean <- mean(exp_dist_ii)
+  mean
   variance <- var(exp_dist_ii)
-  
-  
+  variance
   
   
