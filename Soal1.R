@@ -26,7 +26,7 @@
   hist(rgeom(N,P),main = "Distribusi Geometrik Peluang X = 3 gagal sebelum sukses pertama")
   
 # Soal 1E: Nilai Rataan (μ) dan Varian (σ²) dari Distribusi Geometrik.
-  mean <- Q/P
+  mean <- 1/P
   mean
   variance <- (Q/(P^2))
   variance
