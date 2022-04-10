@@ -16,4 +16,5 @@
 
 # Soal 6C: Nilai Varian (σ²) dari hasil generate random nilai Distribusi Normal.
   std_dev_ii <- sd(norm_dist_i)
-  variance <- std_dev_ii * std_dev_ii 
+  variance <- std_dev_ii * std_dev_ii
+  variance 
