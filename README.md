@@ -135,6 +135,9 @@ variance <- N*P*Q
 **Penjelasan**  
 Untuk mendapatkan kedua nilai tersebut, digunakan rumus mean `N*P` dan rumus mean `N*P*Q`.  
 
+**Screenshot**  
+![2C](https://user-images.githubusercontent.com/70679432/162619632-4a537e2d-e5c4-4835-b183-09a0b506516c.jpeg)  
+
 
 
 
