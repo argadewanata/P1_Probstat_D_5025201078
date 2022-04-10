@@ -12,4 +12,6 @@
 
 # Soal 4C: Nilai Rataan (μ) dan Varian (σ²) dari Distribusi Chi-Square.
   mean <- V
+  mean
   variance <- V * 2
+  variance
