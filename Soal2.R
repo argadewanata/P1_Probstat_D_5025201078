@@ -1,3 +1,4 @@
+
 # Terdapat 20 pasien menderita Covid19 dengan peluang sembuh sebesar 0.2.
   Size <- 20
   P <- 0.2
@@ -13,6 +14,5 @@
 
 # Soal 2C: Nilai Rataan (μ) dan Varian (σ²) dari Distribusi Binomial.
   mean <- mean(bino_dist_ii)
-  variance <- var(bino_dist_ii)
-  
-  
+  mean
+
