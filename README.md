@@ -223,8 +223,8 @@ V <- 10
 ```  
 
 ### Soal 4A  
-**Deskripsi Soal**
-Fungsi Probabilitas dari Distribusi Chi-Square.  
+**Deskripsi Soal**  
+Fungsi Probabilitas dari Distribusi Chi-Square.    
 
 **Kode Program**  
 ```R
@@ -270,13 +270,77 @@ variance <- V * 2
 **Screenshot**  
 ![4C](https://user-images.githubusercontent.com/70679432/162620500-23324422-f3b8-433d-a694-9e245767951f.jpeg)  
 
+## Soal 5  
+Diketahui bilangan acak (random variable) berdistribusi exponential (λ = 3).  
 
+**Kode Program**  
+```R
+Lambda <- 3  
+```  
 
+### Soal 5A  
+**Deskripsi Soal**  
+Fungsi Probabilitas dari Distribusi Exponensial  
 
+**Kode Program**  
+```R
+# Soal 5A
+exp_dist_i <- dexp(x = Lambda)
+```  
 
+**Penjelasan**  
 
+**Screenshot**  
+![5A](https://user-images.githubusercontent.com/70679432/162620664-b259ae8c-8fbe-4ad8-94c3-14769e57feea.jpeg)  
 
+### Soal 5B  
+**Deskripsi Soal**
+Histogram dari Distribusi Exponensial untuk 10, 100, 1000 dan 10000 bilangan random  
 
+**Kode Program**  
+```R
+# Soal 5B
+set.seed(1)
+N_10 <- runif(10)
+hist(rexp(N_10),main = "Histogram Distribusi Exponensial 10 Angka Acak")  
+
+set.seed(1)
+N_100 <- runif(100)
+hist(rexp(N_100),main = "Histogram Distribusi Exponensial 100 Angka Acak")
+
+set.seed(1)
+N_1000 <- runif(1000)
+hist(rexp(N_1000),main = "Histogram Distribusi Exponensial 1000 Angka Acak")
+
+set.seed(1)
+N_10000 <- runif(10000)
+hist(rexp(N_10000),main = "Histogram Distribusi Exponensial 10000 Angka Acak")
+``` 
+**Penjelasan**  
+  
+**Screenshot**  
+![5B_i](https://user-images.githubusercontent.com/70679432/162620757-191a8943-b523-4dbc-bbcc-73fc7200bd01.jpeg)  
+![5B_ii](https://user-images.githubusercontent.com/70679432/162620763-6fa09862-04eb-4b81-9c69-b6ddd1d7cb55.jpeg)  
+![5B_iii](https://user-images.githubusercontent.com/70679432/162620767-273b06c5-9826-474f-b3ae-dc4f6c45941b.jpeg)  
+![5B_iv](https://user-images.githubusercontent.com/70679432/162620775-f0b71123-89ed-44b1-bba2-af24df47de6f.jpeg)  
+
+### Soal 5C  
+**Deskripsi Soal**  
+Nilai Rataan (μ) dan Varian ( σ² ) dari Distribusi Exponensial untuk n = 100 dan λ = 3  
+
+**Kode Program**  
+```R
+# Soal 5C
+N <- 10
+exp_dist_ii <- rexp(10)
+mean <- mean(exp_dist_ii)
+variance <- var(exp_dist_ii)
+```  
+
+**Penjelasan**  
+
+**Screenshot**  
+![5C](https://user-images.githubusercontent.com/70679432/162620912-bb1e6c7f-1ccd-46b6-ac2b-dfdd5211e386.jpeg)  
 
 
 
