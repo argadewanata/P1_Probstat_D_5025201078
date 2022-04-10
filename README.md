@@ -181,6 +181,7 @@ hist(poiss_dist_ii,main = "Grafik histogram distribusi poisson kelahiran 6 bayi 
 ```  
 
 **Penjelasan**  
+Dengan memanfaatkan fungsi `rpois`, akan didapatkan variabel acak sebanyak 365 buah. Hasil tersebut kemudian ditampilkan dalam bentuk histogram dengan fungsi `hist`  
 
 **Screenshot**
 ![3B](https://user-images.githubusercontent.com/70679432/162619978-3e5d961f-bb37-4354-aeea-59592f97d017.jpeg)  
@@ -196,6 +197,7 @@ mean(poiss_dist_ii == 6)
 ```  
 
 **Penjelasan**  
+Pada poin a nilainya statis, yaitu 0.12812. Pada poin b nilainya dinamis, tetapi tidak terpaut jauh dari nilai poin A. Sehingga dapat ditarik kesimpulan bahwa meskipun nilai b bernilai dinamis, tetapi nilai dari poin b selalu mendekati nilai dari poin a  
 
 **Screenshot**  
 ![3C](https://user-images.githubusercontent.com/70679432/162620049-4baaa220-6e42-45cd-8989-2a6eafd70662.jpeg)  
@@ -210,6 +212,8 @@ Nilai Rataan (μ) dan Varian ( σ² ) dari Distribusi Poisson.
 mean <- Lambda
 variance <- mean
 ```  
+**Penjelasan**  
+Pada distribusi poisson, nilai mean didapatkan dengan cara `mean = lambda` dan nilai varian didapatkan dengan cara `varian = mean`  
 
 **Screenshot**  
 ![3D](https://user-images.githubusercontent.com/70679432/162620127-129f55c1-1d83-4619-9d83-5fbfe11b800e.jpeg)  
@@ -233,6 +237,7 @@ chisq_dist_i <- dchisq(X,df = V)
 ```  
 
 **Penjelasan**  
+Dengan menggunakan fungsi `dchisq`, akan didapat nilai sebesar 0.007664  
 
 **Screenshot**  
 ![4A](https://user-images.githubusercontent.com/70679432/162620381-1870d25f-5846-4143-9969-41af6b88358d.jpeg)  
@@ -250,6 +255,7 @@ hist(chisq_dist_ii,main = "Grafik Histogram Distribusi Chi-Square pada 100 Rando
 ```  
 
 **Penjelasan**  
+Dengan menggunakan fungsi `rchisq`, akan didapatkan nilai distribusi Chi-Square sebanyak 100 buah dari data acak. Hasil tersebut kemudian ditampilkan dalam bentuk histogram dengan fungsi `hist`.  
 
 **Screenshot**  
 ![4B](https://user-images.githubusercontent.com/70679432/162620433-a25ac404-8e79-45f0-af23-32629ffe2fd8.jpeg)  
@@ -266,6 +272,7 @@ variance <- V * 2
 ```  
 
 **Penjelasan**  
+Pada distribus Chi-Square, nilai mean didaptkan dengan cara `mean = V` dan nilai varians didapatkan dengan cara `varians = 2*V`.  
 
 **Screenshot**  
 ![4C](https://user-images.githubusercontent.com/70679432/162620500-23324422-f3b8-433d-a694-9e245767951f.jpeg)  
