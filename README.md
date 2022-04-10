@@ -78,7 +78,30 @@ variance <- (Q/(P^2))
 Untuk mendapatkan kedua nilai tersebut, digunakan rumus mean `1/P` dan rumus mean `Q/P^2`.  
 
 **Screenshot**  
-![1E](https://user-images.githubusercontent.com/70679432/162616385-c36972a6-07fa-4fc7-a88f-6a65c099913a.jpeg)
+![1E](https://user-images.githubusercontent.com/70679432/162616385-c36972a6-07fa-4fc7-a88f-6a65c099913a.jpeg)  
+
+## Soal 2  
+Terdapat 20 pasien menderita Covid19 dengan peluang sembuh sebesar 0.2.  
+
+**Kode Program**  
+```R
+Size <- 20
+P <- 0.2
+Q <- 1 - P
+```  
+
+### Soal 2A  
+**Deskripsi Soal**  
+Peluang terdapat 4 pasien yang sembuh.  
+
+**Kode Program**  
+```R
+N <- 4
+bino_dist_i <- dbinom(N,Size,P)
+```  
+**Penjelasan**  
+Dengan menggunakan fungsi `dbinom`, didapatkan nilai dari peluang terdapat 4 pasien sembuh sebanyak 0.21819  
+
 
 
 
