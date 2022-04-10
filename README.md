@@ -342,6 +342,67 @@ variance <- var(exp_dist_ii)
 **Screenshot**  
 ![5C](https://user-images.githubusercontent.com/70679432/162620912-bb1e6c7f-1ccd-46b6-ac2b-dfdd5211e386.jpeg)  
 
+## Soal 6  
+Diketahui generate random nilai sebanyak 100 data, mean = 50, sd = 8.
+
+**Kode Program**  
+```R
+N <- 100
+Mean <- 50
+Std_dev_i <- 8
+```  
+
+### Soal 6A  
+**Deskripsi Soal**  
+Fungsi Probabilitas dari Distribusi Normal P(X1 ≤ x ≤ X2), hitung Z-Score Nya dan plot data generate randomnya dalam bentuk grafik. Petunjuk(gunakan fungsi plot()).  
+
+**Kode Program**  
+```R
+# Soal 6A
+norm_dist_i <- rnorm(N,Mean,Std_dev_i)
+x1 <- floor(mean(norm_dist_i))
+x2 <- ceiling(mean(norm_dist_i))
+z_score <- ((norm_dist_i - mean(norm_dist_i))/ (sd(norm_dist_i)))
+plot(z_score, type = 'p', col='blue') 
+```  
+
+**Penjelasan**  
+
+**Screenshot**  
+![6A](https://user-images.githubusercontent.com/70679432/162621033-fa13b18f-4ad1-404e-bfec-edb33f9544da.jpeg)  
+
+### Soal 6B  
+**Deskripsi Soal**  
+Generate Histogram dari Distribusi Normal dengan breaks 50 dan format penamaan: NRP_Nama_Probstat_{Nama Kelas}_DNhistogram  
+
+**Kode Program**  
+```R
+# Soal 6B
+hist(norm_dist_i,50,main = "5025201078_Rere Arga Dewanata_Probstat_D_DNhistogram ")
+```  
+
+**Penjelasan**  
+
+**Screenshot**  
+![6B](https://user-images.githubusercontent.com/70679432/162621114-a250190c-4274-431c-a32d-e7559e7ee0a1.jpeg)  
+
+### Soal 6C  
+**Deskripsi Soal**  
+Nilai Varian (σ²) dari hasil generate random nilai  Distribusi Normal.  
+
+**Kode Program**  
+```R
+# Soal 6C
+std_dev_ii <- sd(norm_dist_i)
+variance <- std_dev_ii * std_dev_ii
+```  
+
+**Penjelasan**  
+
+**Screenshot**  
+![6C](https://user-images.githubusercontent.com/70679432/162621180-346053d3-8a8d-41e2-abff-52759ca004e9.jpeg)  
+
+
 
 
 
