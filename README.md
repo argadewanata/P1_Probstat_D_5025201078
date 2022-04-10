@@ -46,7 +46,7 @@ Berbeda dengan fungsi sebelumnya, fungsi `rgeom` adalah fungsi yang berguna untu
 **Deskripsi Soal**  
 Bandingkan Hasil poin a dan b , apa kesimpulan yang bisa didapatkan?  
 
-**Penjelasan**
+**Penjelasan**  
 Pada poin a nilainya statis, yaitu 0.1024. Pada poin b nilainya dinamis, tetapi tidak terpaut jauh dari nilai poin A. Sehingga dapat ditarik kesimpulan bahwa meskipun nilai b bernilai dinamis, tetapi nilai dari poin b selalu mendekati nilai dari poin a  
 
 ### Soal 1D
@@ -56,7 +56,31 @@ Histogram Distribusi Geometrik , Peluang X = 3 gagal Sebelum Sukses Pertama
 **Kode Program**  
 ```R
 # Soal 1D
-``` 
+hist(rgeom(N,P),main = "Distribusi Geometrik Peluang X = 3 gagal sebelum sukses pertama")  
+```  
+**Penjelasan**  
+Dengan menggunakan fungsi `hist`, kita dapat membuat sebuah histogram dari sebuah distribusi  
+
+**Screenshot**  
+![1D](https://user-images.githubusercontent.com/70679432/162616196-63ab2ac8-105a-42ce-8a23-109efc139107.jpeg)  
+
+### Soal 1E
+**Deskripsi Soal**  
+Nilai Rataan (μ) dan Varian (σ²) dari Distribusi Geometrik.  
+
+**Kode Program**  
+```R
+# Soal 1E
+mean <- 1/P
+variance <- (Q/(P^2))
+```  
+**Penjelasan**
+Untuk mendapatkan kedua nilai tersebut, digunakan rumus mean `1/P` dan rumus mean `Q/P^2`.  
+
+**Screenshot**  
+![1E](https://user-images.githubusercontent.com/70679432/162616385-c36972a6-07fa-4fc7-a88f-6a65c099913a.jpeg)
+
+
 
 
 
