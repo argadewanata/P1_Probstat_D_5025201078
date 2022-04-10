@@ -13,6 +13,10 @@
   hist(bino_dist_ii,main ="Grafik Histogram Distribusi Binomial")
 
 # Soal 2C: Nilai Rataan (μ) dan Varian (σ²) dari Distribusi Binomial.
-  mean <- mean(bino_dist_ii)
+  mean <- N*P
   mean
-
+  variance <- N*P*Q
+  variance
+  
+  
+  
