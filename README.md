@@ -42,5 +42,21 @@ Berbeda dengan fungsi sebelumnya, fungsi `rgeom` adalah fungsi yang berguna untu
 **Screenshot**  
 ![1B_ii](https://user-images.githubusercontent.com/70679432/162615960-58acb1a9-1ede-4a74-a74d-6b327910d165.jpeg)  
 
+### Soal 1C  
+**Deskripsi Soal**  
+Bandingkan Hasil poin a dan b , apa kesimpulan yang bisa didapatkan?  
+
+**Penjelasan**
+Pada poin a nilainya statis, yaitu 0.1024. Pada poin b nilainya dinamis, tetapi tidak terpaut jauh dari nilai poin A. Sehingga dapat ditarik kesimpulan bahwa meskipun nilai b bernilai dinamis, tetapi nilai dari poin b selalu mendekati nilai dari poin a  
+
+### Soal 1D
+**Deskripsi Soal**  
+Histogram Distribusi Geometrik , Peluang X = 3 gagal Sebelum Sukses Pertama  
+
+**Kode Program**  
+```R
+# Soal 1D
+``` 
+
 
 
