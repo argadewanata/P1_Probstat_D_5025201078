@@ -102,6 +102,42 @@ bino_dist_i <- dbinom(N,Size,P)
 **Penjelasan**  
 Dengan menggunakan fungsi `dbinom`, didapatkan nilai dari peluang terdapat 4 pasien sembuh sebanyak 0.21819  
 
+**Screenshot**  
+![2A](https://user-images.githubusercontent.com/70679432/162619217-829b459c-e0a0-4171-97d9-acfc390ade30.jpeg)  
+
+### Soal 2B  
+
+**Deskripsi Soal**  
+Gambarkan grafik histogram berdasarkan kasus tersebut.  
+
+**Kode Program**  
+```R
+bino_dist_ii <- rbinom(20,Size,P)
+hist(bino_dist_ii,main ="Grafik Histogram Distribusi Binomial")
+```  
+
+**Penjelasan**  
+Fungsi `rbinom` akan menghasilkan jumlah nilai acak yang diperlukan dari probabilitas sampel yang diberikan. Hasil tersebut akan ditampilkan dalam bentuk grafik histogram dengan fungsi `hist`.  
+
+**Screenshot**  
+![2B](https://user-images.githubusercontent.com/70679432/162619352-e8fe9806-420d-4e33-9220-b035e8a44cf1.jpeg)  
+
+### Soal 2C  
+
+**Deskripsi Soal**
+Nilai Rataan (μ) dan Varian (σ²) dari  Distribusi Binomial.  
+
+**Kode Program**  
+```R
+mean <- N*P
+variance <- N*P*Q
+``` 
+**Penjelasan**  
+Untuk mendapatkan kedua nilai tersebut, digunakan rumus mean `N*P` dan rumus mean `N*P*Q`.  
+
+
+
+
 
 
 
