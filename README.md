@@ -75,7 +75,7 @@ mean <- 1/P
 variance <- (Q/(P^2))
 ```  
 **Penjelasan**  
-Untuk mendapatkan kedua nilai tersebut, digunakan rumus mean `1/P` dan rumus mean `Q/P^2`.    
+Untuk mendapatkan kedua nilai tersebut, digunakan rumus `mean = 1/P` dan rumus `varians = Q/P^2`.    
 
 **Screenshot**  
 ![1E](https://user-images.githubusercontent.com/70679432/162616385-c36972a6-07fa-4fc7-a88f-6a65c099913a.jpeg)  
@@ -136,7 +136,7 @@ mean <- N*P
 variance <- N*P*Q
 ``` 
 **Penjelasan**  
-Untuk mendapatkan kedua nilai tersebut, digunakan rumus mean `N*P` dan rumus mean `N*P*Q`.  
+Untuk mendapatkan kedua nilai tersebut, digunakan rumus `mean = N*P` dan rumus `varians = N*P*Q`.  
 
 **Screenshot**  
 ![2C](https://user-images.githubusercontent.com/70679432/162619632-4a537e2d-e5c4-4835-b183-09a0b506516c.jpeg)  
@@ -302,7 +302,7 @@ Dengan menggunakn fungsi `dexp`, akan didapatkan suatu nilai peluang dari nilai 
 ![5A](https://user-images.githubusercontent.com/70679432/162620664-b259ae8c-8fbe-4ad8-94c3-14769e57feea.jpeg)  
 
 ### Soal 5B  
-**Deskripsi Soal**
+**Deskripsi Soal**  
 Histogram dari Distribusi Exponensial untuk 10, 100, 1000 dan 10000 bilangan random  
 
 **Kode Program**  
