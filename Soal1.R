@@ -27,7 +27,7 @@
   
 # Soal 1E: Nilai Rataan (μ) dan Varian (σ²) dari Distribusi Geometrik.
   mean <- Q/P
+  mean
   variance <- (Q/(P^2))
-
- 
+  variance
  
